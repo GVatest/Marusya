@@ -16,6 +16,7 @@ def hello():
                 "tts": "Привет вездекодерам!",
                 "end_session": True
             },
+            "version": "1.0"
         }
         if ("ThereIsNoInfoRoma" in data["request"]["command"] and "Вездекод" in data["request"]["command"]):
             resp["response"] = {
