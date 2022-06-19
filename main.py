@@ -52,7 +52,7 @@ def quiz():
                 "score": "0"
             }
             return json.dumps(resp)
-        if "state" in data:
+        if "state" in data.keys():
             if data["state"]["session"]["question"] == "1":
                 resp["response"] = {
                     "text": "Второй вопрос: В каком Doom первый раз запустили не на компьютере",
