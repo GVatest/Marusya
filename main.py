@@ -22,14 +22,14 @@ def hello():
                 "text": "Привет вездекодерам!",
                 "tts": "Привет вездекодерам!",
                 "end_session": True
-            },
+            }
             return json.dumps(resp)
         
         resp["response"] = {
                 "text": "Сегодня без привета",
                 "tts": "Сегодня без привета",
                 "end_session": True
-        },
+        }
         return json.dumps(resp)
     else:
         return "Hello"
