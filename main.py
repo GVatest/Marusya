@@ -11,14 +11,10 @@ def hello():
         data = json.loads(request.data)
         resp = {
             "session": data["session"],
-            "response": {
-                "text": "Привет вездекодерам!",
-                "tts": "Привет вездекодерам!",
-                "end_session": True
-            },
+            "response": {},
             "version": "1.0"
         }
-        if ("ThereIsNoInfoRoma" in data["request"]["command"] and "Вездекод" in data["request"]["command"]):
+        if ("thereisnoinforoma" in data["request"]["command"] and "вездеход" in data["request"]["command"]):
             resp["response"] = {
                 "text": "Привет вездекодерам!",
                 "tts": "Привет вездекодерам!",
