@@ -14,21 +14,21 @@ def hello():
             "response": {
                 "text": "Привет вездекодерам!",
                 "tts": "Привет вездекодерам!",
-                "end_session": true
+                "end_session": True
             },
         }
         if ("ThereIsNoInfoRoma" in data["request"]["command"] and "Вездекод" in data["request"]["command"]):
             resp["response"] = {
                 "text": "Привет вездекодерам!",
                 "tts": "Привет вездекодерам!",
-                "end_session": true
+                "end_session": True
             },
             return resp
         
         resp["response"] = {
                 "text": "Сегодня без привета",
                 "tts": "Сегодня без привета",
-                "end_session": true
+                "end_session": True
         },
         return resp
     else:
